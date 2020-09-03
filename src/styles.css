@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: var(--main-bg);
+    font-family: 'Hind', sans-serif;
+}
+
+:root {
+    --main-white: #e6e6e6;
+    --main-bg-darker: #681EF6;
+    --main-bg-dark: #2019D4;
+    --main-bg: #275CEB;
+    --main-bg-light: #4095D6;
+    --main-bg-lighter: #1ED9F6;
+  }

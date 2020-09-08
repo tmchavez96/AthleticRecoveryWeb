@@ -3,7 +3,7 @@
         <img src="../../../assets/images/stretchingMan.jpg" class="landing-img">
     -->
     
-    <div class="landing-img">
+    <div class="landing-img" id="about">
         <div class="landing-img-txt">
             <h2>
                 Good Bye Injuries,
@@ -24,37 +24,141 @@
         </div>
     </div>
 
-    <div class="products-cont">
+    <div class="products-cont" id=products>
         <div class="products-header">
-            <h1>
+            <h1 class="products-header-txt">
                 Products
             </h1>
         </div>
-        
+         
         <div class="products-flex">
             <div class="product-item" id="item-firefly">
                 
                 <img class="product-img" src="../../../assets/images/ff_device.png">
                 
                 <h1 class="product-title">Firefly</h1>
+                <div class="button-flex">
+                    <button class="detail-button">
+                        Learn More
+                    </button>
+                    <button class="shop-button">
+                        Shop Now
+                    </button>
+                </div>
             </div>
         
             <div class="product-item" id="item-geko">
                 <img class="product-img" src="../../../assets/images/geko_device.png">
                 <h1 class="product-title">Geko</h1>
+                <div class="button-flex">
+                    <button class="detail-button">
+                        Learn More
+                    </button>
+                    <button class="shop-button">
+                        Shop Now
+                    </button>
+                </div>
             </div>
             <div class="product-item" id="item-nice">
                 <img class="product-img" src="../../../assets/images/nice_device.jpg">
                 <h1 class="product-title">Nice Recovery</h1>
+                <div class="button-flex">
+                    <button class="detail-button">
+                        Learn More
+                    </button>
+                    <button class="shop-button">
+                        Shop Now
+                    </button>
+                </div>
             </div>
             <div class="product-item" id="item-blg">
                 <img class="product-img" src="../../../assets/images/blg_active.jpg">
                 <h1 class="product-title">BLG Active</h1>
+                <div class="button-flex">
+                    <button class="detail-button">
+                        Learn More
+                    </button>
+                    <button class="shop-button">
+                        Shop Now
+                    </button>
+                </div>
             </div>
             <div class="product-item" id="item-thera" style="background-color: rgb(219, 219, 219);">
                 <img class="product-img" src="../../../assets/images/thera_gun.webp">
                 <h1 class="product-title" style="background-color: rgba(219, 219, 219, 0.85);">Thera Gun</h1>
+                <div class="button-flex">
+                    <button class="detail-button">
+                        Learn More
+                    </button>
+                    <button class="shop-button">
+                        Shop Now
+                    </button>
+                </div>
             </div>
         </div>
+    </div>
+
+    <div class="podcast-cont" id="podcast">
+        <div class="products-header">
+            <h1 class="products-header-txt">
+                Our Podcast!
+            </h1>
+        </div>
+        <div class="podcast-flex">
+            <div class="podcast-img-cont">
+                <img class="podcast-img" src="../../../assets/images/podcast.jpg">
+            </div>
+            
+            <div class="podcast-details-flex">
+                <h1> Join the Conversation!</h1>
+                <p class="podcast-details">
+                    Join Anthony Kjenstad, the founder of Athletic Recovery and Performance, developing the brands and awareness of technologies 
+                    developed for athletes to perform optimally. Listen in as Anthony gets to work with coaches, trainers, sports scientists,
+                    physicians and the elite athletes themselves. Anthony dives into what makes them all perform at a high level and what are the 
+                    secrets to their craft while also focusing on learning more of how the technologies he represents can help them
+                </p>
+            </div>
+        </div>
+        <div class="podcats-button-cont">
+            <a class="detail-button" href="https://www.buzzsprout.com/1071205">
+                Listen Here!
+            </a>
+        </div>
+    </div>
+
+    <div class="contact-cont">
+        <div class="contact-header">
+            <h1 class="contact-header-one">
+                Questions?
+            </h1>
+            <h1 class="contact-header-two">
+                Get in Touch!
+            </h1>
+        </div>
+        <form class="contact-form">
+            <div class="form-field">
+                <label class="form-label">First Name:</label>
+                <input type="text" class="form-text"> 
+            </div>
+            <div class="form-field">
+                <label class="form-label"> Last Name:</label>
+                <input type="text" class="form-text">
+            </div>
+            <div class="form-field">
+                <label class="form-label">Email:</label>
+                <input type="email" class="form-text">    
+            </div>
+            <div class="form-field">
+                <label class="form-label">Message:</label>
+                <textarea type="text"  rows="5" cols="60" maxlength="250" class="form-text">
+                </textarea>
+            </div>
+            <div class="contact-submit">
+                <button type="submit" class=" detail-button">
+                    Submit
+                </button>
+            </div>
+            
+        </form>
     </div>
 </div>

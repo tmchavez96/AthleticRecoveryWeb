@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 body{
-    background: var(--main-white);
+    background: white;
     font-family: 'Hind', sans-serif;
   
     min-width: fit-content;
-    perspective: 500px;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -14,4 +14,5 @@ body{
     --main-bg: #275CEB;
     --main-bg-light: #4095D6;
     --main-bg-lighter: #1ED9F6;
+    scroll-behavior: smooth;
   }

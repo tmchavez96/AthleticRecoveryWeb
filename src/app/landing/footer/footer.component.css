@@ -1,0 +1,37 @@
+.footer-cont{
+    background-color: var(--main-bg);
+    padding: 30px;
+    color: white;
+}
+
+.sm{
+    
+    display: flex;
+    justify-content: right;
+}
+
+.sm a{
+    cursor: pointer;
+    margin-right: 30px;
+    color: white;
+    font-size: 40px;
+    transition: 0.4s;
+}
+
+.sm a:hover{
+    transform: scale(1.3);
+}
+
+@media screen and (max-width: 600px) {
+    
+    .sm{
+    justify-content: center;
+    }   
+    .sm a{
+        cursor: pointer;
+        margin-right: 5px;
+        color: white;
+        font-size: 40px;
+        transition: 0.4s;
+    } 
+}

@@ -5,20 +5,16 @@
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    position: absolute;
+    position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
-    height: 150px;
+    width: 100%;
+    z-index: 800;
 }
 
-.logo-img{
-    
-}
 
 .nav-bar{
     margin-top: 20px;
-    
+    z-index: 801;
 }
 
 .nav-item{
@@ -26,6 +22,7 @@
     font-size: 25px;
     font-weight: semi-bold;
     cursor: pointer;
+    z-index: 802;
 }
 
 .nav-item:hover{
@@ -34,13 +31,14 @@
 
 @media screen and (max-width: 600px) {
 
+
     .logo-img{
         width: 250px;
     }
 
     .header-cont{
         height: 100px;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         right: 0;

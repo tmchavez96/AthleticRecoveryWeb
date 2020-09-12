@@ -12,6 +12,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  navBarState = false;
+
   navScroll(num) {
     var id = ""
     if(num == 1){
@@ -36,4 +38,15 @@ export class HeaderComponent implements OnInit {
   log(){
     console.log("hello")
   }
+
+
+  toggleNavBar(){
+
+    let newHeight = this.navBarState ? "100px;" : "200px;"
+    let elms = document.getElementsByClassName("header-cont")
+    let headerCont = elms[0]
+    headerCont.setAttribute("style","height:"+newHeight)
+    this.navBarState = !this.navBarState
+  }
+
 }

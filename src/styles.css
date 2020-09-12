@@ -14,5 +14,7 @@ body{
     --main-bg: #275CEB;
     --main-bg-light: #4095D6;
     --main-bg-lighter: #1ED9F6;
+    --logo-dark: #1a2e46;
+    --logo-light: #3d96cc;
     scroll-behavior: smooth;
   }

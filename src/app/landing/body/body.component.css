@@ -3,27 +3,42 @@
 }
 
 .landing-img{
-    width: 100%;
-    background-image: url("../../../assets/images/stretchingMan.jpg");
+    background-image: url("../../../assets/images/BikingIllustration.png");
     background-size: cover;
-    padding-top: 150px;
-    padding-bottom: 150px;
-    background-position: left;
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-position: top center;
+    overflow: hidden;
 }
 
-
-.landing-img-txt{
+.img-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.45);
-    width: 80%;
-    margin-left: 10%;
-    border: solid black 2px;
-    border-radius: 15px;
+    border-bottom: solid black 2px;
 }
 
+.img-txt{
+    position: absolute;
+    bottom: 0;
+    right: -5%;
+    width: 50%;
+    color: black;
+    font-size: 30px;
+    width: 110%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 40px;
+    border-top: solid black 2px;
+}
 
-.landing-img-par{
-    font-size: 20px;
+.img-txt p{
+    width: 80%;
+    margin-left: 10%;
+    text-align: left;
 }
 
 .products-cont{
@@ -74,6 +89,8 @@
 
 .product-item:hover::before{
     top: 70px;
+    text-align: left;
+    padding: 5px;
 }
 
 #item-firefly::before{
@@ -197,6 +214,8 @@
 
 .podcast-details{
     font-size: 20px;
+    text-align: left;
+    padding: 20px;
 }
 
 .podcast-img{
@@ -212,7 +231,6 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-
 }
 
 
@@ -274,6 +292,46 @@
 
 @media screen and (max-width: 600px) {
 
+    .landing-img{
+        height: 1000px;
+        background-position: bottom left;
+    }
+
+    
+    .img-header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.0);
+        border-bottom: none;
+    }
+
+    .img-txt{
+        position: absolute;
+        bottom: 0;
+        right: -5%;
+        width: 50%;
+        color: black;
+        font-size: 30px;
+        width: 110%;
+        background-color: rgba(255, 255, 255, 0.0);
+        /* background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.6) ); */
+        padding: 40px;
+        border-top: none;
+    }
+
+    .mobile-bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        /* background-color: rgba(255, 255, 255, 0.55); */
+        background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9) );
+    }
+
     .body-cont{
         margin-top: 100px;
         width: 100%;
@@ -309,7 +367,13 @@
         height: 100px;
     }
 
+    .podcast-details-flex{
+        max-width: 100%;
+    }
+
     .podcast-details{
-        font-size: 14px;
+        font-size: 18px;
+        padding: 10px;
+        width: 100%;
     }
 }
